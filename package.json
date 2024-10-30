@@ -4,7 +4,7 @@
   "scripts": {
     "lint": "prettier .",
     "lint:fix": "bun run lint -- --write",
-    "deploy:reental:polygon": "source .env && forge script scripts/DeployAaveV3ReentalMarketBatched.sol:Reental --rpc-url ${RPC_POLYGON} --private-key ${PRIVATE_KEY} --broadcast -vvvv —-slow --verify --etherscan-api-key ${ETHERSCAN_API_KEY_MAINNET}"
+    "deploy:reental:polygon": "source .env && forge script scripts/DeployAaveV3ReentalMarketBatched.sol:Reental --rpc-url ${RPC_POLYGON} --private-key ${PRIVATE_KEY} --broadcast --with-gas-price 175gwei -vvvv —-slow --verify --etherscan-api-key ${ETHERSCAN_API_KEY_MAINNET}"
   },
   "repository": {
     "type": "git",
