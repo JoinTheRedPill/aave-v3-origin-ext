@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "lint": "prettier .",
-    "lint:fix": "bun run lint -- --write"
+    "lint:fix": "bun run lint -- --write",
+    "deploy:reental:polygon": "source .env && forge script scripts/DeployAaveV3ReentalMarketBatched.sol:Reental --rpc-url ${RPC_SEPOLIA} --private-key ${PRIVATE_KEY} --broadcast -vvvv —slow --verify --etherscan-api-key ${ETHERSCAN_API_KEY_MAINNET}"
   },
   "repository": {
     "type": "git",
